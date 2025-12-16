@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lycah & Lyzah's 18th Birthday Debut</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">L & L</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#celebration" class="nav-link">Celebration</a></li>
+                <li><a href="#traditions" class="nav-link">Traditions</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sparkle Canvas -->
+    <canvas id="sparkleCanvas"></canvas>
+    
+    <!-- Decorative butterflies -->
+    <div class="butterfly butterfly-1"></div>
+    <div class="butterfly butterfly-2"></div>
+    <div class="butterfly butterfly-3"></div>
+    <div class="butterfly butterfly-4"></div>
+    <div class="butterfly butterfly-5"></div>
+    <div class="butterfly butterfly-6"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="background-eighteen-hero">18</div>
+        <div class="hero-content">
+            <div class="hero-invitation">
+                <p class="you-are-invited">You are invited</p>
+            </div>
+            <div class="hero-names">
+                <h1 class="name-script">
+                    <span class="name-lyzah">Lyzah</span>
+                    <span class="ampersand">&</span>
+                    <span class="name-lycah">Lycah</span>
+                </h1>
+                <h2 class="surname">Gonzales</h2>
+            </div>
+            <p class="turns">turns</p>
+            <div class="eighteen">Eighteen</div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">↓</div>
+                <p>Scroll to explore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Milestone Celebration</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">
+                        Join us as we celebrate the coming of age of two extraordinary young women. 
+                        This special evening marks not just a birthday, but a beautiful transition 
+                        into adulthood, filled with dreams, hopes, and endless possibilities.
+                    </p>
+                    <div class="milestone-grid">
+                        <div class="milestone-card">
+                            <div class="card-inner">
+                                <div class="card-icon-wrapper">
+                                    <div class="milestone-icon"></div>
+                                </div>
+                                <div class="card-number">18</div>
+                                <h3 class="card-name">Lycah</h3>
+                                <div class="card-divider"></div>
+                                <p class="card-description">A journey of grace and elegance</p>
+                                <div class="card-decorative-corner card-corner-tl"></div>
+                                <div class="card-decorative-corner card-corner-tr"></div>
+                                <div class="card-decorative-corner card-corner-bl"></div>
+                                <div class="card-decorative-corner card-corner-br"></div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="card-inner">
+                                <div class="card-icon-wrapper">
+                                    <div class="milestone-icon milestone-icon-2"></div>
+                                </div>
+                                <div class="card-number">18</div>
+                                <h3 class="card-name">Lyzah</h3>
+                                <div class="card-divider"></div>
+                                <p class="card-description">A celebration of beauty and dreams</p>
+                                <div class="card-decorative-corner card-corner-tl"></div>
+                                <div class="card-decorative-corner card-corner-tr"></div>
+                                <div class="card-decorative-corner card-corner-bl"></div>
+                                <div class="card-decorative-corner card-corner-br"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-photo">
+                    <div class="photo-frame-about">
+                        <img src="assets/debut-photo.png" alt="Lycah and Lyzah" class="debut-photo-about">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Debut Teaser Section -->
+    <section id="teaser" class="teaser-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Debut Teaser</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">A glimpse into our magical celebration</p>
+            </div>
+            <div class="video-container">
+                <div class="video-frame">
+                    <div class="frame-ornament frame-ornament-tl"></div>
+                    <div class="frame-ornament frame-ornament-tr"></div>
+                    <div class="frame-ornament frame-ornament-bl"></div>
+                    <div class="frame-ornament frame-ornament-br"></div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/01etXtTIBvc?si=gpCAplyT04xIhDAb&autoplay=1&mute=1&loop=1&playlist=01etXtTIBvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celebration Details Section -->
+    <section id="celebration" class="celebration-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Celebration Details</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <h3 class="countdown-title">Counting Down to Our Special Day</h3>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="celebration-card">
+                <div class="background-eighteen-cel">18</div>
+                <div class="event-details-main">
+                    <div class="detail-box">
+                        <div class="detail-icon date-icon"></div>
+                        <h3>Date</h3>
+                        <p class="detail-primary">Saturday, January 03</p>
+                        <p class="detail-secondary">2026</p>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-icon time-icon"></div>
+                        <h3>Time</h3>
+                        <p class="detail-primary">6:00 PM</p>
+                        <p class="detail-secondary">Evening Reception</p>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-icon location-icon"></div>
+                        <h3>Venue</h3>
+                        <p class="detail-primary">Lorenzo's Place</p>
+                        <p class="detail-secondary">Valenzuela</p>
+                    </div>
+                </div>
+                <div class="dress-code">
+                    <h3>Dress Code</h3>
+                    <div class="dress-code-details">
+                        <p class="dress-primary">Semi-Formal for Guests</p>
+                        <p class="dress-secondary">Coat Attire for 18th Roses</p>
+                    </div>
+                    <p class="color-preference">We would love to see you wearing something in this color palette</p>
+                    <div class="color-palette">
+                        <div class="color-group">
+                            <span class="color-label">Purple</span>
+                            <div class="color-swatches">
+                                <span class="color-swatch" style="background: #E6D7FF;" title="Light Purple"></span>
+                                <span class="color-swatch" style="background: #C4A7FF;" title="Lavender"></span>
+                                <span class="color-swatch" style="background: #9370DB;" title="Medium Purple"></span>
+                                <span class="color-swatch" style="background: #8B7AB8;" title="Purple"></span>
+                            </div>
+                        </div>
+                        <div class="color-group">
+                            <span class="color-label">Pink</span>
+                            <div class="color-swatches">
+                                <span class="color-swatch" style="background: #F8C8DC;" title="Light Pink"></span>
+                                <span class="color-swatch" style="background: #E8A0BF;" title="Pink"></span>
+                                <span class="color-swatch" style="background: #D77FA1;" title="Rose"></span>
+                                <span class="color-swatch" style="background: #C86B8A;" title="Mauve"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-section">
+                        <h4>Theme</h4>
+                        <p class="theme-name">Enchanted Fairy Land</p>
+                    </div>
+                    <div class="hashtag-section">
+                        <p class="hashtag">#LYCAH&LYZAH18THBDAY</p>
+                        <p class="share-text">Don't forget to share your moments!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Location Map -->
+            <div class="location-map-section">
+                <h3 class="map-title">Find Us Here</h3>
+                <p class="map-subtitle">Lorenzo's Place, Valenzuela</p>
+                <div class="map-toggle-buttons">
+                    <button class="map-toggle-btn active" data-view="map">Map View</button>
+                    <button class="map-toggle-btn" data-view="street">Street View</button>
+                </div>
+                <div class="map-container">
+                    <div class="map-frame">
+                        <iframe id="mapView" class="map-iframe active" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15437.276012675595!2d120.9943115502843!3d14.6945434662576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b154576179e5%3A0x6c3116b751ed8038!2sLorenzo&#39;s%20Place%20-%20Valenzuela!5e0!3m2!1sen!2sph!4v1765895218058!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe id="streetView" class="map-iframe" src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sph!4v1765895082862!5m2!1sen!2sph!6m8!1m7!1s9sJka8f6cvePpDxvMLY5cA!2m2!1d14.6945434662576!2d120.9943115502843!3f355.83389411120015!4f-3.1990751848144754!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18 Traditions Section -->
+    <section id="traditions" class="traditions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">18 Traditions</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Honoring the people who shaped our journey</p>
+            </div>
+
+            <!-- 18th Roses -->
+            <div class="tradition-group">
+                <h3 class="tradition-title">18 Roses</h3>
+                <p class="tradition-description">Eighteen gentlemen who have made a significant impact in our lives</p>
+                <button class="tradition-toggle" data-target="roses">Show</button>
+                <div class="tradition-columns" id="roses" style="display: none;">
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lycah's Roses</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Yuri Liam Eugenio</div>
+                            <div class="tradition-item">2. Miguel Co</div>
+                            <div class="tradition-item">3. Jester Remirez</div>
+                            <div class="tradition-item">4. Andrei Tamayo</div>
+                            <div class="tradition-item">5. JohnRey Mangasil</div>
+                            <div class="tradition-item">6. JhonPaul Era</div>
+                            <div class="tradition-item">7. Wilmer Palermo</div>
+                            <div class="tradition-item">8. Roberto Balasa</div>
+                            <div class="tradition-item">9. Luminador Paderes</div>
+                            <div class="tradition-item">10. John Hayden Icayan</div>
+                            <div class="tradition-item">11. Raul Laplana</div>
+                            <div class="tradition-item">12. John leo Reyes</div>
+                            <div class="tradition-item">13. Roan Paderez</div>
+                            <div class="tradition-item">14. Jimmy Albacite</div>
+                            <div class="tradition-item">15. Kurt Dellava</div>
+                            <div class="tradition-item">16. James Albacite</div>
+                            <div class="tradition-item">17. Reynold Gonzales</div>
+                            <div class="tradition-item">18. Arnold Gonzales</div>
+                        </div>
+                    </div>
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lyzah's Roses</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Patrick Jugan</div>
+                            <div class="tradition-item">2. Clyde Malibiran</div>
+                            <div class="tradition-item">3. Jerecho Ramirez</div>
+                            <div class="tradition-item">4. Eugene Arteta</div>
+                            <div class="tradition-item">5. Jenad Mangasil</div>
+                            <div class="tradition-item">6. Eduardo Garcia</div>
+                            <div class="tradition-item">7. Alex Dellava</div>
+                            <div class="tradition-item">8. Thomas Lopez</div>
+                            <div class="tradition-item">9. Tito Boboy</div>
+                            <div class="tradition-item">10. John Cassius Icayan</div>
+                            <div class="tradition-item">11. Juni Reyes</div>
+                            <div class="tradition-item">12. Sydney Tabobo</div>
+                            <div class="tradition-item">13. Raden Billones</div>
+                            <div class="tradition-item">14. Junjun Gaddi</div>
+                            <div class="tradition-item">15. Jimmy Albacite Jr.</div>
+                            <div class="tradition-item">16. John Andrei Icayan</div>
+                            <div class="tradition-item">17. Leonard Gonzales</div>
+                            <div class="tradition-item">18. Hargie Icayan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18th Dances -->
+            <div class="tradition-group">
+                <h3 class="tradition-title">18 Dances</h3>
+                <p class="tradition-description">Eighteen special dances with the important men in our lives</p>
+                <button class="tradition-toggle" data-target="dances">Show</button>
+                <div class="tradition-columns" id="dances" style="display: none;">
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lycah's Dances</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Pauleen Peñanueva</div>
+                            <div class="tradition-item">2. Dannece Juralbar</div>
+                            <div class="tradition-item">3. Elisha Melante</div>
+                            <div class="tradition-item">4. Ayisha Benavidez</div>
+                            <div class="tradition-item">5. Shanel Flores</div>
+                            <div class="tradition-item">6. Hazel Deleon</div>
+                            <div class="tradition-item">7. Zach Gamboa</div>
+                            <div class="tradition-item">8. Richelle San Felipe</div>
+                            <div class="tradition-item">9. Chelsea Tugano</div>
+                            <div class="tradition-item">10. Michael Jacob Co</div>
+                            <div class="tradition-item">11. Keane Manucduc</div>
+                            <div class="tradition-item">12. Rachel Villarta</div>
+                            <div class="tradition-item">13. Macy Chua</div>
+                            <div class="tradition-item">14. Janzzen Leyba</div>
+                            <div class="tradition-item">15. Angelo Tiansing</div>
+                            <div class="tradition-item">16. Seph Eusebio</div>
+                            <div class="tradition-item">17. John Rick Talion</div>
+                            <div class="tradition-item">18. Zaira Dacanay</div>
+                        </div>
+                    </div>
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lyzah's Dances</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Marian Nequias</div>
+                            <div class="tradition-item">2. Carlo Dumanhog</div>
+                            <div class="tradition-item">3. Skye Marcelo</div>
+                            <div class="tradition-item">4. Princess Albacite</div>
+                            <div class="tradition-item">5. Shelby Cu</div>
+                            <div class="tradition-item">6. Althea Angeles</div>
+                            <div class="tradition-item">7. Chaz Gamboa</div>
+                            <div class="tradition-item">8. Akeelah Pepito</div>
+                            <div class="tradition-item">9. Michaella Boco</div>
+                            <div class="tradition-item">10. Grace Lian Malbasias</div>
+                            <div class="tradition-item">11. Hana Suganob</div>
+                            <div class="tradition-item">12. Hana Muyong</div>
+                            <div class="tradition-item">13. Raven Marcelo</div>
+                            <div class="tradition-item">14. Mayonie Estrope</div>
+                            <div class="tradition-item">15. Anthony Gaite</div>
+                            <div class="tradition-item">16. Emerson Racelis</div>
+                            <div class="tradition-item">17. Axel Moreno</div>
+                            <div class="tradition-item">18. Zaira Gonzales</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18th Gifts -->
+            <div class="tradition-group">
+                <h3 class="tradition-title">18 Gifts</h3>
+                <p class="tradition-description">Eighteen treasures from the women who have guided us</p>
+                <button class="tradition-toggle" data-target="gifts">Show</button>
+                <div class="tradition-columns" id="gifts" style="display: none;">
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lycah's Gifts</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Aleah Jabuen</div>
+                            <div class="tradition-item">2. Ninang Nita</div>
+                            <div class="tradition-item">3. Ninang Norma</div>
+                            <div class="tradition-item">4. Ninang Lucy</div>
+                            <div class="tradition-item">5. Cherry Cu</div>
+                            <div class="tradition-item">6. Marichelle San Felipe</div>
+                            <div class="tradition-item">7. Kharen Aranas</div>
+                            <div class="tradition-item">8. Lorna Gaddi</div>
+                            <div class="tradition-item">9. Analyn Albacite</div>
+                            <div class="tradition-item">10. Ma'am Jeanneth Togores</div>
+                            <div class="tradition-item">11. Ma'am Glenda Bumatay</div>
+                            <div class="tradition-item">12. Sir Mark Jay Magalang</div>
+                            <div class="tradition-item">13. Ma'am Rose Burgos</div>
+                            <div class="tradition-item">14. Ma'am Christina Perlas</div>
+                            <div class="tradition-item">15. Ma'am Rowena Sakay</div>
+                            <div class="tradition-item">16. Ate Jean</div>
+                            <div class="tradition-item">17. Ate Isang</div>
+                            <div class="tradition-item">18. Ninang Agnes</div>
+                        </div>
+                    </div>
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lyzah's Gifts</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Michelle Gonzales</div>
+                            <div class="tradition-item">2. Ninang Melyn</div>
+                            <div class="tradition-item">3. Ninang Gemma</div>
+                            <div class="tradition-item">4. Ninang Ruby</div>
+                            <div class="tradition-item">5. Melai Tamayo</div>
+                            <div class="tradition-item">6. Rea Pepito</div>
+                            <div class="tradition-item">7. Jhoyce Marcelo</div>
+                            <div class="tradition-item">8. Ma. Fe Icayan</div>
+                            <div class="tradition-item">9. Arlyn Billones</div>
+                            <div class="tradition-item">10. Ma'am Jennifer Cabiten</div>
+                            <div class="tradition-item">11. Ma'am Annaliza Dellima</div>
+                            <div class="tradition-item">12. Sir Jayson Peralta</div>
+                            <div class="tradition-item">13. Sir Elmerson Matias</div>
+                            <div class="tradition-item">14. Ma'am Daisy Mariano</div>
+                            <div class="tradition-item">15. Ma'am Lyzel Bernardo</div>
+                            <div class="tradition-item">16. Jenny Co</div>
+                            <div class="tradition-item">17. Levi Francisco</div>
+                            <div class="tradition-item">18. Malou Mangasil</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18th Candles -->
+            <div class="tradition-group">
+                <h3 class="tradition-title">18 Candles</h3>
+                <p class="tradition-description">Eighteen special wishes from those who cherish us most</p>
+                <button class="tradition-toggle" data-target="candles">Show</button>
+                <div class="tradition-columns" id="candles" style="display: none;">
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lycah's Candles</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Raiza Gonzales</div>
+                            <div class="tradition-item">2. Jeangel Gaddi</div>
+                            <div class="tradition-item">3. Ninang Alona Atentar</div>
+                            <div class="tradition-item">4. Jasmine Singcol</div>
+                            <div class="tradition-item">5. Alyssa Pastera</div>
+                            <div class="tradition-item">6. Hyca Buslatan</div>
+                            <div class="tradition-item">7. Vince Fernandez</div>
+                            <div class="tradition-item">8. Rolyn Cayco</div>
+                            <div class="tradition-item">9. Chezca Nuevo</div>
+                            <div class="tradition-item">10. Precious Labis</div>
+                            <div class="tradition-item">11. Summer Dela Cruz</div>
+                            <div class="tradition-item">12. Angela Dapiton</div>
+                            <div class="tradition-item">13. Lorenze Manuel</div>
+                            <div class="tradition-item">14. Rosario Diones</div>
+                            <div class="tradition-item">15. Jomar Magada</div>
+                            <div class="tradition-item">16. Gian De Galicia</div>
+                            <div class="tradition-item">17. Jasper Rublico</div>
+                            <div class="tradition-item">18. Kate Eclarino</div>
+                        </div>
+                    </div>
+                    <div class="tradition-column">
+                        <h4 class="column-name">Lyzah's Candles</h4>
+                        <div class="tradition-list">
+                            <div class="tradition-item">1. Janella Gaddi</div>
+                            <div class="tradition-item">2. Juliana Gaddi</div>
+                            <div class="tradition-item">3. Darlyn Billones</div>
+                            <div class="tradition-item">4. Nathalie Arellano</div>
+                            <div class="tradition-item">5. Lyka Mendoza</div>
+                            <div class="tradition-item">6. Aaliyah Castillet</div>
+                            <div class="tradition-item">7. Micha Chang</div>
+                            <div class="tradition-item">8. Jannah Alberto</div>
+                            <div class="tradition-item">9. Ante Endang</div>
+                            <div class="tradition-item">10. Ante Moni</div>
+                            <div class="tradition-item">11. Aira Tumagcao</div>
+                            <div class="tradition-item">12. Alicia Dela Cruz</div>
+                            <div class="tradition-item">13. Maymay Tabobo</div>
+                            <div class="tradition-item">14. Francine Ponesto</div>
+                            <div class="tradition-item">15. Zai Tugonon</div>
+                            <div class="tradition-item">16. Ninang Imelda</div>
+                            <div class="tradition-item">17. Jamaica Mangasil</div>
+                            <div class="tradition-item">18. Abigail Anocol</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Capturing beautiful moments</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="assets/gallery-1.jpg" alt="Debut moment 1">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="assets/gallery-2.jpg" alt="Debut moment 2" onerror="this.parentElement.innerHTML='<div class=\'placeholder-text\'>Photo 2</div>'">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="assets/gallery-3.jpg" alt="Debut moment 3" onerror="this.parentElement.innerHTML='<div class=\'placeholder-text\'>Photo 3</div>'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-names">
+                <p class="footer-script">Lycah & Lyzah</p>
+            </div>
+            <p class="footer-tagline">A celebration of elegance, dreams, and new beginnings</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 - With love and gratitude</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
