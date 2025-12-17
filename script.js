@@ -1,3 +1,60 @@
+// ============ BACKGROUND MUSIC ============
+const bgMusic = document.getElementById('bgMusic');
+const musicToggle = document.getElementById('musicToggle');
+const musicIcon = document.querySelector('.music-icon');
+const muteIcon = document.querySelector('.mute-icon');
+let isPlaying = false;
+
+// Set initial volume
+if (bgMusic) {
+    bgMusic.volume = 0.3; // Set to 30% volume
+}
+
+// Try to autoplay music when user interacts with the page
+function initMusic() {
+    if (bgMusic && !isPlaying) {
+        bgMusic.play().then(() => {
+            isPlaying = true;
+            musicIcon.style.display = 'block';
+            muteIcon.style.display = 'none';
+            musicToggle.classList.add('playing');
+        }).catch(error => {
+            // Autoplay was prevented, user needs to click the button
+            console.log('Autoplay prevented, waiting for user interaction');
+        });
+    }
+    // Remove the event listeners after first interaction
+    document.removeEventListener('click', initMusic);
+    document.removeEventListener('scroll', initMusic);
+    document.removeEventListener('keydown', initMusic);
+}
+
+// Add event listeners for user interaction to start music
+document.addEventListener('click', initMusic, { once: true });
+document.addEventListener('scroll', initMusic, { once: true });
+document.addEventListener('keydown', initMusic, { once: true });
+
+// Music toggle button functionality
+if (musicToggle && bgMusic) {
+    musicToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        
+        if (isPlaying) {
+            bgMusic.pause();
+            isPlaying = false;
+            musicIcon.style.display = 'none';
+            muteIcon.style.display = 'block';
+            musicToggle.classList.remove('playing');
+        } else {
+            bgMusic.play();
+            isPlaying = true;
+            musicIcon.style.display = 'block';
+            muteIcon.style.display = 'none';
+            musicToggle.classList.add('playing');
+        }
+    });
+}
+
 // Mobile Navigation Toggle
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
